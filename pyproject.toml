@@ -13,5 +13,11 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["code_from_books"]
 
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+    "ruff>=0.11.13",
+]
+
 [project.scripts]
 algorithms = "grokking_algorithms.scripts.algorithms:main"
